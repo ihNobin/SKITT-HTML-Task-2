@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKITT HTML Task-8</title>
+    <style>
+        body{
+            background-color: rgba(177, 163, 84, 0.527);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .menu{ /*start of CSS for menu*/
+            display: flex;
+            background-color: rgba(168, 129, 30, 0.253);
+            justify-content: space-between;
+            border-radius: 25px;
+            padding: 5px;
+        }
+        .title-logo{
+            border-radius: 25px;
+        }
+        ul{
+            text-align: center;
+        }
+        ul li{
+            display: inline-block;
+        }
+        .menu>ul>li>a{
+            text-decoration: none;
+            color: darkcyan;
+        }
+        .menubar{
+            background-color: rgba(184, 135, 11, 0.178);
+            border-radius: 25px;
+            padding: 9px;
+        } /*end of CSS for menu*/
+
+        .content-page{
+            display: flex;
+        }
+        .content-page h1{
+            color: darkgoldenrod;
+        }
+        .contents{
+            margin: 8px;
+            padding: 8px;
+            border: 4px dotted rosybrown;
+            flex: 3;
+        }
+        hr{
+            border: 1px dashed darkred;
+        }
+        .img-data{
+            width: auto;
+            height: auto;
+        }
+        .img-data>img{
+            width: 11%;
+            height: 11%;
+            border-radius: 50%;
+        }
+        .sub-contents{
+            margin: 8px;
+            padding: 8px;
+            border: 4px dotted rosybrown;
+            flex-direction: 1;
+        }
+        .content-data h1{
+            text-align: center;
+        }
+        .content-data p{
+            text-align: justify;
+        }
+        .content-hilights>a{
+            text-decoration: none;
+            display: block;
+            margin: 10px;
+            color: maroon;
+        }
+        .page-end{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .cpyrght a{
+            text-decoration: none;
+            margin: 10px;
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu"> <!--Start of menu-->
+        <img class="title-logo" src="./images/ink.png" height="50" width="50">
+        <p><b>Write-Us</b></p>
+        <ul>
+            <li><a class="menubar" href="#">Home</a></li>
+            <li><a class="menubar" href="#">Our Contents</a></li>
+            <li><a class="menubar" href="#">About Us</a></li>
+            <li><a class="menubar" href="#">Log-in</a></li>
+        </ul>
+    </div> <!--end of menu-->
+
+    <div class="content-page"> <!--start of contents-->
+        <div class="contents"> <!--start of left-side contents-->
+            <div class="content-data">
+                <div class="img-data">
+                    <img src="./images/Cap.png">
+                    <h1>Content title</h1>
+                    <p><b>(Contents)</b> Examlpe:<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut distinctio laboriosam quasi corrupti et asperiores mollitia, eius repellendus? Qui autem eaque itaque hic expedita laboriosam facere quidem perspiciatis eligendi alias.</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="content-data">
+                <div class="img-data">
+                    <img src="./images/Cap.png">
+                    <h1>Content title</h1>
+                    <p><b>(Contents)</b> Examlpe:<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut distinctio laboriosam quasi corrupti et asperiores mollitia, eius repellendus? Qui autem eaque itaque hic expedita laboriosam facere quidem perspiciatis eligendi alias.</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="content-data">
+                <div class="img-data">
+                    <img src="./images/Cap.png">
+                    <h1>Content title</h1>
+                    <p><b>(Contents)</b> Examlpe:<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut distinctio laboriosam quasi corrupti et asperiores mollitia, eius repellendus? Qui autem eaque itaque hic expedita laboriosam facere quidem perspiciatis eligendi alias.</p>
+                    <hr>
+                </div>
+            </div>
+        </div> <!--end of left-side contents-->
+
+        <div class="sub-contents"> <!--start of right-side contents-->
+            <h1>Most Readed</h1>
+            <p>Quick Brown Fox Jumps Over The Lazy Dog.</p>
+
+            <h1>Other Top Articles</h1>
+            <div class="content-hilights">
+                <a href="#">Covid Situation around The Globe...</a>
+                <a href="#">Messenger Sequrity Updates...</a>
+                <a href="#">Tesla Launching their first ever Smart Phone...</a>
+                <a href="#">A boy of age 19, tracked Elon Musks JET...</a>
+            </div>
+        </div> <!--end of right-side contents-->
+    </div> <!--end of contents-->
+
+    <div class="page-end"> <!--start of page-end-->
+        <div class="adress">
+            <p>Barisal, Bangladesh</p>
+        </div>
+        <div class="cpyrght">
+            <a href="#">© Copyright 2022</a>
+        </div>
+        <div class="cpyrght2">
+            <p>All Rights reserved</p>
+        </div>
+    </div> <!--end of page-end-->
+</body>
+</html>
